@@ -1,7 +1,8 @@
 # CrossCode
 **CrossCode - A new, simple 2D barcode**
 
-<img src="https://raw.githubusercontent.com/benediktneumayr/CrossCode/master/test.svg?sanitize=true" height="100" width="100" />  <em>CrossCode</em>
+<img src="https://raw.githubusercontent.com/benediktneumayr/CrossCode/master/test.svg?sanitize=true" height="100" width="100" />  
+<em>CrossCode</em>
 
 ![Code 39](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Code_3_of_9.svg/262px-Code_3_of_9.svg.png)
 
