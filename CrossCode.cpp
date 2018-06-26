@@ -12,7 +12,7 @@ int main() {
 	getline(cin, path);
 	file.open(path, ios::trunc);
 	int dimension = sqrt(text.length() * 7);
-	if (dimension != 7 * text.length()) {
+	if (dimension * 7 != 7 * text.length()) {
 		dimension += 1;
 	}
 	dimension += 1;
