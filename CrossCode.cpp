@@ -11,8 +11,8 @@ int main() {
 	cout << "Enter Path:" << endl;
 	getline(cin, path);
 	file.open(path, ios::trunc);
-	int dimension = sqrt(text.length() * 6);
-	if (dimension != 6 * text.length()) {
+	int dimension = sqrt(text.length() * 7);
+	if (dimension != 7 * text.length()) {
 		dimension += 1;
 	}
 	dimension += 1;
@@ -22,12 +22,11 @@ int main() {
 	}
 	for (int i = 0; i < text.length(); i++) {
 		uint8_t letter = text.at(i);
-		if (letter < 63 || letter > 126) {
+		if (letter > 127) {
 			cout << "ERROR: Character out of bounds!" << endl << "You may close the window and try again.";
 			while (1) {}
 		}
-		letter -= 64;
-		for (int ii = 0; ii < 6; ii++) {
+		for (int ii = 0; ii < 7; ii++) {
 			int bit = (letter >> ii) & 1;
 			static float x = 0;
 			static float y = 0;
