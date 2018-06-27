@@ -16,9 +16,9 @@ int main() {
 		dimension += 1;
 	}
 	dimension += 1;
-	file << "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" height=\"" << dimension * 100 << "\" width=\"" << dimension * 100 << "\" style=\"background:white\">";
+	file << "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" height=\"" << dimension * 100 - 50 << "\" width=\"" << dimension * 100 - 50 << "\" style=\"background:white\">";
 	for (int i = 0; i < dimension; i++) {
-		file << "<rect x=\"0\" y=\"" << i * 100 << "\" height=\"50\" width=\"" << dimension * 100 << "\" style=\"fill:black\" />";
+		file << "<rect x=\"0\" y=\"" << i * 100 << "\" height=\"50\" width=\"" << dimension * 100 - 50 << "\" style=\"fill:black\" />";
 	}
 	for (int i = 0; i < text.length(); i++) {
 		uint8_t letter = text.at(i);
